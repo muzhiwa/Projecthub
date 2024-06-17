@@ -1,0 +1,455 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%; /* Ensure html and body take up the full height of the viewport */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+body {
+  background-color: #EEE9E3; /* Light pink */
+  
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.signup-container {
+  background-color: #d9bfb1; /* earthy */
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+  border: 5px solid #5e5946; /* fef color is cute */
+  border-radius: 5px;
+}
+
+.signup-title {
+  font-family: 'Nunito', sans-serif;
+  /* Other existing styles */
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+/* Input fields */
+.input-field {
+  margin-bottom: 15px;
+}
+
+/* Autocomplete dropdowns */
+.autocomplete {
+  margin-bottom: 15px;
+}
+
+/* Sign-up button */
+.signup-button {
+  display: block;
+  margin: 0 auto;
+  background-color: #a8c065;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-button:hover {
+  background-color: darken(#9DC183, 20%);
+}
+
+/* styles.css */
+/* styles.css */
+.add-project-button {
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.add-project-button:hover {
+  cursor: pointer;
+  background-color: darken(#9DC183, 20%);
+}
+
+.separator {
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Project card title with blue color */
+.proj-card-title {
+  font-size: 20px; /* Font size for the title */
+  font-family: 'Arial', sans-serif; /* Font family */
+  color: #3c71c0; /* Blue color for the title */
+  margin-bottom: -10px; /* Space below the title */
+}
+/* styles.css */
+
+.projects-title {
+  font-family: 'Oranienbaum', serif; /* Use the Oranienbaum font */
+  color: #93bcdc; /* Set the color to #524D4B */
+  text-align: center; /* Center the text */
+  font-size: 104px; /* Set the font size to 104 pixels */
+}
+
+.passion-project-text {
+  font-family: 'Times New Roman', serif; /* Use the Times New Roman font */
+  color: #7e6255; /* Set the color to black */
+  text-align: center; /* Center the text */
+  font-size: 20px; /* Set the font size to 104 pixels */
+
+}
+
+/* styles.css */
+
+.add-project-button {
+  padding: 20px;
+  background-color: #9DC183; /* Set the background color to sage green */
+  color: white; /* Set the text color to white */
+  /* Add any additional styles as needed */
+
+.add-project-button:hover {
+    background-color: darken(#9DC183, 20%);
+  }
+}
+
+/* New styles for the ProjCard container */
+.add-project-button {
+  background-color: #9DC183; /* Set the background color to sage green */
+  color: white; /* Set the text color to white */
+  /* Add any additional styles as needed */
+}
+
+/* Apply a consistent background color to the whole page */
+html, body {
+  height: 100%; /* Ensure full height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #fff9f0; /* The color you want to set */
+}
+
+/* Container for the entire content */
+.main-container {
+  min-height: 100vh; /* At least full viewport height */
+  padding: 20px; /* Padding to prevent sticking to edges */
+  background-color: inherit; /* Inherit the background color from body */
+}
+
+
+.add-project-button:hover {
+    background-color: darken(#9DC183, 20%);
+}
+
+/* Adjust the container to fit the cards dynamically */
+.proj-card-container {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible columns */
+  grid-row-gap: 20px; /* Consistent space between rows */
+  grid-column-gap: 20px; /* Consistent space between columns */
+  padding: 20px; /* Padding for the container */
+}
+
+/* Project card style */
+.proj-card {
+  background-color: white; /* White background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+  padding: 20px; /* Internal padding */
+  text-align: center; /* Centered text */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: space-between; /* Evenly distribute space */
+}
+
+/* Hover effect to enhance floating appearance */
+.proj-card-container {
+  display: grid; /* Use CSS Grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid with auto-fit columns */
+  grid-row-gap: 20px; /* 20px vertical space between rows */
+  grid-column-gap: 20px; /* Consistent space between columns */
+  padding: 20px; /* Padding around the grid */
+  justify-content: center; /* Center the grid content */
+}
+
+/* Project card style */
+.proj-card {
+  background-color: white; /* White background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+  padding: 20px; /* Padding for content */
+  text-align: center; /* Center the text */
+  display: flex; /* Flex layout for vertical alignment */
+  flex-direction: column; /* Align content vertically */
+  justify-content: space-between; /* Evenly distribute content */
+}
+/* Project card description */
+.proj-card-desc {
+  color: #333333; /* Dark text color */
+  font-size: 16px; /* Font size */
+  margin-bottom: 10px; /* Space below the description */
+}
+.word-count {
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Contact information with light blue color */
+.proj-card-contact {
+  font-family: 'Verdana', sans-serif; /* Font family */
+  color: rgb(157, 110, 17); /* Light blue color */
+  font-size: 14px; /* Font size */
+}
+
+/* Button within the project card */
+.proj-card-button {
+  margin-top: 20px; /* Margin above the button */
+  background-color: #9DC183; /* Background color for the button */
+  color: white; /* Text color for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.proj-card-button:hover {
+  background-color: darken(#9DC183, 20%); /* Change background color on hover */
+}
+
+
+.coffee-brown-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.coffee-brown-button button {
+  background-color: #916a3d; /* Coffee brown */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.coffee-brown-button button:hover {
+  background-color: #7a5830; /* Darker coffee brown on hover */
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+}
+.background-container {
+  background-image: url('./images/projhome.png'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align children to the bottom */
+  padding-left: 270px;
+  padding-bottom: 200px; /* Add padding to the bottom for spacing */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Add space between buttons */
+}
+.project-hub-button {
+  padding: 40px 30px; /* Adjust padding for larger size */
+  font-size: 35px;
+}
+
+.advice-page {
+  background-image: url('./images/adviceproj.png'); /* Set the background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  height: 100vh; /* Set the height of the container */
+  padding: 20px; /* Add padding if needed */
+  /* Add any additional styles as needed */
+}
+
+.edit-button {
+  font-size: 12px; /* Adjust the font size as needed */
+  flex: 0 0 auto; 
+}
+
+.wrapper{
+  width: 450px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #9B59B6;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
